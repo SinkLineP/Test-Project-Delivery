@@ -1,0 +1,62 @@
+<h1>Delivery</h1>
+
+<%= form_with method: :post do |form| %>
+  <div>
+    <%= form.label :name, "Имя:" %><br />
+    <%= form.text_field :name %>
+  </div><br />
+
+  <div>
+    <%= form.label :surname, "Фамилия:" %><br />
+    <%= form.text_field :surname %>
+  </div><br />
+
+  <div>
+    <%= form.label :lastname, "Отчество:" %><br />
+    <%= form.text_field :lastname %>
+  </div><br />
+
+  <div>
+    <%= form.label :phone, "Телефон:" %><br />
+    <%= form.text_field :phone %>
+  </div><br />
+
+  <div>
+    <%= form.label :email, "Email:" %><br />
+    <%= form.text_field :email %>
+  </div><br />
+
+  <div>
+    <%= form.label :weight, "Вес (кг):" %><br />
+    <%= form.text_field :weight %>
+  </div><br />
+
+  <div>
+    <%= form.label :length, "Длина (см):" %><br />
+    <%= form.text_field :length %>
+  </div><br />
+
+  <div>
+    <%= form.label :width, "Ширина (см):" %><br />
+    <%= form.text_field :width %>
+  </div><br />
+
+  <div>
+    <%= form.label :height, "Высота (см):" %><br />
+    <%= form.text_field :height %>
+  </div><br />
+
+  <div>
+    <%= form.label :departure_point, "Пункт отправления:" %><br />
+    <%= form.text_field :departure_point %>
+  </div><br />
+
+  <div>
+    <%= form.label :destination, "Пункт назначения:" %><br />
+    <%= form.text_field :destination %>
+  </div><br />
+
+  <div>
+    <%= form.submit "Search" %>
+  </div>
+<% end %>
